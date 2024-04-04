@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
+
 @Component({
   selector: 'app-child',
   standalone: true,
@@ -16,4 +17,6 @@ export class ChildComponent {
     this.messageEvent.emit('Hello from child');
   }
 
+
+  message = 'message from child';
 }
