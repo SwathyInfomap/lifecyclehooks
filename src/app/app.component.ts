@@ -17,6 +17,7 @@ import { DatePipe } from '@angular/common';
 export class AppComponent {
   title = 'lifecycleHooks';
   todaysDate = new Date();
+  itemImageUrl = '../assets/phone.jpg';
 
   getMin(a: number,b: number){
     if (a<b){

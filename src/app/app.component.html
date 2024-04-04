@@ -1,3 +1,9 @@
 {{'World' | greetingsPipe}}<br>
 {{todaysDate | date}}<br>
 {{todaysDate | date : 'EEEE MMMM d y'}}
+
+<br>
+!--interpolation--!
+<p><img src ="{{itemImageUrl}}"></p>
+!--property binding : property here is itemImageUrl--!
+<img [src] ="itemImageUrl" alt="image">
