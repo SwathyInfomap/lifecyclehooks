@@ -1,10 +1,11 @@
 import { Component, OnDestroy, OnInit, makeStateKey } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,ParentComponent],
+  imports: [RouterOutlet,ParentComponent,ChildComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   styles:['h2{color:red}']
