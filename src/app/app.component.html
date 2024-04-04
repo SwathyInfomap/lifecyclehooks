@@ -3,7 +3,29 @@
 {{todaysDate | date : 'EEEE MMMM d y'}}
 
 <br>
-!--interpolation--!
+
+<!--interpolation-->
 <p><img src ="{{itemImageUrl}}"></p>
-!--property binding : property here is itemImageUrl--!
+<!--property binding : property here is itemImageUrl-->
 <img [src] ="itemImageUrl" alt="image">
+
+<!--interpolation and property binding can only set properties not attributes-->
+<!--colspan vs colSpan-->
+
+<!--
+    <table>
+    <tr>
+        <td colspan = "{{1 + 1}}">Three -Four</td>
+    </tr>
+</table>
+this will throw template parse error-->
+
+<table>
+    <tr>
+        <td [colSpan] = "1 + 1">Three -Four</td>
+    </tr>
+</table>
+
+<br>
+
+<button [disabled]= "isUnChanged">Disable</button>

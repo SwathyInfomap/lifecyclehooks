@@ -26,6 +26,9 @@ export class AppComponent {
     return b;
   }
 
+  //make isUnChanged = false to enable the button
+  isUnChanged = true;
+
   // intervalSub:any;
 
   // ngOnInit(){
