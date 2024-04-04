@@ -1,1 +1,9 @@
-@import '../../assets/external-styles.css'
+@import '../../assets/external-styles.css';
+
+:host{    display: block;
+    border: 1px solid red;}
+
+
+:host(.active){
+    border: 1px solid green;
+}

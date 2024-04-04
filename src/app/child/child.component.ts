@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 
 
 @Component({
@@ -6,7 +6,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './child.component.html',
-  styleUrl: './child.component.css'
+  styleUrl: './child.component.css',
+  //encapsulation:ViewEncapsulation.None/**to apply styles globally */
 })
 export class ChildComponent {
   @Input() childMessage:any;
