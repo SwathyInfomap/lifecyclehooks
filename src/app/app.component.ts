@@ -3,17 +3,20 @@ import { RouterOutlet } from '@angular/router';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { GreetingsPipePipe } from "./greetings-pipe.pipe";
+import { DatePipe } from '@angular/common';
+
+
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     styles: ['h2{color:red}'],
-    imports: [RouterOutlet, ParentComponent, ChildComponent, GreetingsPipePipe]
+    imports: [RouterOutlet, ParentComponent, ChildComponent, GreetingsPipePipe,DatePipe]
 })
 export class AppComponent {
   title = 'lifecycleHooks';
-
+  todaysDate = new Date();
 
   getMin(a: number,b: number){
     if (a<b){
